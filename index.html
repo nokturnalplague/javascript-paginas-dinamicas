@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Numans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+
+<body>
+
+    <main>
+        <img src="/./img/bag.png" alt="Sacola de compras">
+        <form>
+            <input class="input-item" id="input-item" type="text" placeholder="Digite o item que deseja adicionar"/>
+            <button class="button-item" id="adicionar-item">Salvar item</button>
+        </form>
+
+        <div class="container-lista">
+            <div id="container-lista-de-compras">
+                <h2>Lista de compras</h2>
+                <hr>
+
+                <ul id="lista-de-compras">
+                    <p id="mensagem-lista-vazia" style="display: block; margin-bottom: 8px;"> Sua lista está vazia. Adicione itens à ela para não esquecer nada na próxima compra!</p>
+                </ul>
+            </div>
+            
+            <div id="container-lista-comprados">
+                <h2>Comprados</h2>
+                <hr/>
+
+                <ul id="lista-comprados">
+                    
+                </ul>
+            </div>
+        </div>
+
+    </main>
+    <script src="./scripts.js" type="module"></script> <!--precisa usar o type module para usar arquivos com funções importadas-->
+</body>
+
+</html>
